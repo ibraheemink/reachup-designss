@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --sidebar-width: 250px;
+            --primary-color: #fb6f92;
+            --text-muted: #6c757d;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: var(--sidebar-width);
+            height: 100vh;
+            background-color: white;
+            padding: 1.5rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-letter {
+            width: 32px;
+            height: 32px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .brand-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .nav-section {
+            margin-bottom: 2rem;
+        }
+
+        .nav-header {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item i {
+            margin-right: 10px;
+        }
+
+        .nav-item:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-item.active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            margin-left: var(--sidebar-width);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1020;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 2rem;
+        }
+
+        .section-card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-card i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .section-card h6 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .preview-card {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8fab;
+            border-color: #ff8fab;
+        }
+
+        .btn-edit i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="brand-section">
+            <div class="d-flex align-items-center mb-3">
+                <span class="brand-letter">D</span>
+                <div class="brand-text">
+                    <span>DELIGHT</span>
+                    <small class="text-muted d-block">Magic W/Delight</small>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-sm w-100 mb-3">Premium Account</button>
+        </div>
+
+        <div class="dashboard-link mb-4">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+        </div>
+
+        <div class="nav-section">
+            <h6 class="nav-header">ENGAGE</h6>
+            <div class="nav-item active">
+                <i class="bi bi-chat-square"></i>
+                <span>Campaigning</span>
+            </div>
+            <div class="nav-item">
+                <i class="bi bi-graph-up"></i>
+                <span>Automation</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <h6 class="nav-header">CONVERSE</h6>
+            <div class="nav-item">
+                <i class="bi bi-inbox"></i>
+                <span>Inbox</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <h6 class="nav-header">GROW</h6>
+            <div class="nav-item">
+                <i class="bi bi-coin"></i>
+                <span>Earn</span>
+            </div>
+            <div class="nav-item">
+                <i class="bi bi-people"></i>
+                <span>Audience</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary btn-sm me-2">Close</button>
+                <button class="btn btn-outline-secondary btn-sm">New Discount</button>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary btn-sm me-2">
+                    <i class="bi bi-palette"></i> Drafts
+                </button>
+                <button class="btn btn-outline-secondary btn-sm me-2">
+                    <i class="bi bi-people"></i> Audience
+                </button>
+                <span class="me-2">2</span>
+                <span>Content</span>
+                <button class="btn btn-warning btn-sm ms-3">NEXT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="section-card">
+                    <i class="bi bi-people"></i>
+                    <div>
+                        <h6>Audience</h6>
+                        <p>Your campaign will be sent to the following audience</p>
+                        <button class="btn btn-outline-secondary btn-sm btn-edit">
+                            <i class="bi bi-pencil"></i>Edit
+                        </button>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                        <h6>Content</h6>
+                        <p>Test your campaign on your phone</p>
+                        <button class="btn btn-outline-secondary btn-sm btn-edit">
+                            <i class="bi bi-pencil"></i>Edit
+                        </button>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <i class="bi bi-calendar3"></i>
+                    <div>
+                        <h6>Schedule</h6>
+                        <p>Choose when to launch your campaign</p>
+                        <div>
+                            <button class="btn btn-outline-secondary btn-sm me-2">Send Now</button>
+                            <button class="btn btn-outline-secondary btn-sm">Schedule for Later</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="preview-card">
+                    <h6>Magic w/ Delight</h6>
+                    <img src="assets/cart.png" alt="Preview Image" class="img-fluid rounded mb-3">
+                    <p>Hello and welcome! Want to join my newsletter?</p>
+                    <button class="btn btn-primary btn-sm w-100 mb-2">I'm In!</button>
+                    <button class="btn btn-outline-secondary btn-sm w-100">Check our website!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

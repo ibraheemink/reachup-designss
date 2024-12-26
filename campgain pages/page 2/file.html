@@ -1,0 +1,291 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --sidebar-width: 250px;
+            --primary-color: #007bff;
+            --text-muted: #6c757d;
+        }
+
+        body {
+            background-color: #f8f9fc;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: var(--sidebar-width);
+            height: 100vh;
+            background-color: white;
+            padding: 1.5rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-letter {
+            width: 32px;
+            height: 32px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .brand-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .nav-section {
+            margin-bottom: 2rem;
+        }
+
+        .nav-header {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item i {
+            margin-right: 10px;
+        }
+
+        .nav-item:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-item.active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .header {
+            padding: 20px;
+            background-color: #f8f9fc;
+            margin-left: var(--sidebar-width);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .btn-danger {
+            background-color: #ff6b6b;
+            border: none;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            margin-left: var(--sidebar-width);
+        }
+
+        .campaign-section {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .campaign-section h2 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .campaign-section table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .campaign-section th,
+        .campaign-section td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .campaign-section .badge {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="brand-section">
+                <div class="d-flex align-items-center mb-3">
+                    <span class="brand-letter">D</span>
+                    <div class="brand-text">
+                        <span>DELIGHT</span>
+                        <small class="text-muted d-block">Magic W/Delight</small>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-sm w-100 mb-3">Premium Account</button>
+            </div>
+
+            <div class="dashboard-link mb-4">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+            </div>
+
+            <!-- Navigation Sections -->
+            <div class="nav-section">
+                <h6 class="nav-header">ENGAGE</h6>
+                <div class="nav-item active">
+                    <i class="bi bi-chat-square"></i>
+                    <span>Campaigning</span>
+                </div>
+                <div class="nav-item">
+                    <i class="bi bi-graph-up"></i>
+                    <span>Automation</span>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <h6 class="nav-header">CONVERSE</h6>
+                <div class="nav-item">
+                    <i class="bi bi-inbox"></i>
+                    <span>Inbox</span>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <h6 class="nav-header">GROW</h6>
+                <div class="nav-item">
+                    <i class="bi bi-coin"></i>
+                    <span>Earn</span>
+                </div>
+                <div class="nav-item">
+                    <i class="bi bi-people"></i>
+                    <span>Audience</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-grow-1">
+            <!-- Header -->
+            <div class="header">
+                <div>
+                    <h1 class="fw-bold">Campaigns</h1>
+                    <p>Engage an Audience massively with a personalised message.</p>
+                </div>
+                <button class="btn btn-danger">+ New</button>
+            </div>
+
+            <!-- Campaigns Section -->
+            <div class="content">
+                <div class="campaign-section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>Audience</th>
+                                <th>Launch Date</th>
+                                <th>Delivered</th>
+                                <th>Interacted</th>
+                                <th>Ordered</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Executive Collection</td>
+                                <td><span class="badge bg-secondary">Draft</span></td>
+                                <td>ReachUp</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Executive Collection</td>
+                                <td><span class="badge bg-secondary">Draft</span></td>
+                                <td>ReachUp</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Explore Cards -->
+            <div class="content">
+                <h5>
+        <div class="fw-bold"><i class="fa fa-book text-dark"></i> Explore our library and create your campaign.</div>
+                </h5>
+                <div class="row explore-cards mt-3">
+                    <div class="col-md-4">
+                        <div class="card text-center p-3">
+                            <i class="fa fa-edit fa-3x text-primary mb-3"></i>
+                            <h6>Start from Scratch</h6>
+                            <p>Create your own campaign.</p>
+                            <button class="btn btn-light">Start</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-3">
+                            <i class="fa fa-bullhorn fa-3x text-success mb-3"></i>
+                            <h6>Exclusive Collection</h6>
+                            <p>Send a campaign to showcase your collection.</p>
+                            <button class="btn btn-light">Use Template</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-3">
+                            <i class="fa fa-chart-line fa-3x text-info mb-3"></i>
+                            <h6>Exclusive Collection</h6>
+                            <p>Send a campaign to showcase your collection.</p>
+                            <button class="btn btn-light">Use Template</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
