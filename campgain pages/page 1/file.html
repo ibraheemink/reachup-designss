@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar bg-white border-end">
+            <div class="p-3">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="logo-circle">D</div>
+                    <div class="ms-2">
+                        <h1 class="logo-text">DELIGHT</h1>
+                        <p class="subtitle">made w/Delight</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 mb-4">Premium Account</button>
+
+                <nav>
+                    <div class="nav-section">
+                        <p class="nav-label">MAIN</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-grid"></i>
+                            Dashboard
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <p class="nav-label">ENGAGE</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-bar-chart"></i>
+                            Campaign
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-square-text"></i>
+                            Automation
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <p class="nav-label">CONVERSE</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-envelope"></i>
+                            Inbox
+                        </a>
+                    </div>
+
+                    <div class="nav-section">
+                        <p class="nav-label">GROW</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-currency-dollar"></i>
+                            Earn
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-people"></i>
+                            Audience
+                        </a>
+                    </div>
+                    
+                    <div class="menu-item"><img src="assests/image.png" width="100"></div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="border-bottom p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-x"></i> Close
+                        </button>
+                        <button class="btn btn-outline-secondary btn-sm">
+                            New Discount
+                        </button>
+                        <button class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-file-text"></i> Drafts
+                        </button>
+                        <button class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-people"></i> Audience
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="text-secondary">2Content</span>
+                        <button class="btn btn-warning btn-sm">
+                            NEXT <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content Area -->
+            <div class="p-4">
+                <div class="container-fluid">
+                    <div class="campaign-section">
+                        <div class="campaign-box">
+                            <div class="campaign-header">
+                                <i class="bi bi-people-fill campaign-icon"></i>
+                                <h2>Select your campaign audience</h2>
+                                <p class="text-secondary">Who are you sending this campaign to?</p>
+                            </div>
+                            
+                            <div class="select-section">
+                                <p class="select-label">Select contact list</p>
+                                <div class="position-relative mb-4">
+                                    <div class="custom-select">
+                                        <select class="form-select">
+                                            <option selected>Select</option>
+                                            <option>List 1</option>
+                                            <option>List 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center toggle-section">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="toggleSwitch">
+                                </div>
+                                <label class="form-check-label ms-2" for="toggleSwitch">
+                                    Also send to contacts that never opted
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
