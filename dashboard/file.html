@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Dashboard</title>
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Internal CSS -->
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar bg-white border-end">
+            <div class="p-3">
+                <!-- Logo Section -->
+                <div class="d-flex align-items-center mb-4">
+                    <div class="logo-circle">D</div>
+                    <div class="ms-2">
+                        <h1 class="logo-text">DELIGHT</h1>
+                        <p class="subtitle">made w/Delight</p>
+                    </div>
+                </div>
+                
+                <!-- Premium Button -->
+                <button class="btn btn-primary w-100 mb-4">Premium Account</button>
+
+                <!-- Navigation -->
+                <nav>
+                    <!-- Main Section -->
+                    <div class="nav-section">
+                        <p class="nav-label">MAIN</p>
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-grid"></i>
+                            Dashboard
+                        </a>
+                    </div>
+
+                    <!-- Engage Section -->
+                    <div class="nav-section">
+                        <p class="nav-label">ENGAGE</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-bar-chart"></i>
+                            Campaign
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-square-text"></i>
+                            Automation
+                        </a>
+                    </div>
+
+                    <!-- Converse Section -->
+                    <div class="nav-section">
+                        <p class="nav-label">CONVERSE</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-envelope"></i>
+                            Inbox
+                        </a>
+                    </div>
+
+                    <!-- Grow Section -->
+                    <div class="nav-section">
+                        <p class="nav-label">GROW</p>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-currency-dollar"></i>
+                            Earn
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-people"></i>
+                            Audience
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="container-fluid p-4">
+                <!-- Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="page-title mb-0">Dashboard</h2>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Past 30 days
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Past 7 days</a></li>
+                            <li><a class="dropdown-item" href="#">Past 30 days</a></li>
+                            <li><a class="dropdown-item" href="#">Past 90 days</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Audience Stats -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-people stats-icon"></i>
+                                    <h6 class="stat-title mb-0 ms-2">Total Opt-in Contacts</h6>
+                                </div>
+                                <h3 class="stat-value">15,689</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-person-plus stats-icon"></i>
+                                    <h6 class="stat-title mb-0 ms-2">New Opt-in Contacts</h6>
+                                </div>
+                                <h3 class="stat-value">40</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-graph-up stats-icon"></i>
+                                    <h6 class="stat-title mb-0 ms-2">Unsubscribe Rate</h6>
+                                </div>
+                                <h3 class="stat-value">5%</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conversation Stats -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-3">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <h6 class="stat-title">Total Conversations</h6>
+                                <h3 class="stat-value">10</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <h6 class="stat-title">Business Conversations</h6>
+                                <h3 class="stat-value">3</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <h6 class="stat-title">Customer Conversations</h6>
+                                <h3 class="stat-value">7</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stats-card">
+                            <div class="card-body">
+                                <h6 class="stat-title">Total Messages</h6>
+                                <h3 class="stat-value">20</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tables Section -->
+                <div class="row g-4">
+                    <!-- Automations Table -->
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-robot text-primary me-2"></i>
+                                        <h5 class="section-title mb-0">Automations</h5>
+                                    </div>
+                                    <a href="#" class="btn btn-link">Go to automations →</a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Triggered</th>
+                                                <th>Delivered</th>
+                                                <th>Interacted</th>
+                                                <th>Ordered</th>
+                                                <th>Revenue</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="6" class="text-center">No data available</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Campaigns Table -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-megaphone text-primary me-2"></i>
+                                        <h5 class="section-title mb-0">Campaigns</h5>
+                                    </div>
+                                    <a href="#" class="btn btn-link">Go to campaigns →</a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Triggered</th>
+                                                <th>Delivered</th>
+                                                <th>Interacted</th>
+                                                <th>Ordered</th>
+                                                <th>Revenue</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="6" class="text-center">No data available</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
