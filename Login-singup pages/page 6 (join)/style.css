@@ -1,0 +1,129 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 1rem;
+}
+
+.logo-container {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+}
+
+.signup-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1D2939;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #344054;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    padding: 0.75rem;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+    border-color: #7F56D9;
+    box-shadow: 0 0 0 4px rgba(127, 86, 217, 0.1);
+}
+
+.btn-primary {
+    background-color: #FF4D4F;
+    border: none;
+    padding: 0.75rem;
+    font-weight: 600;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: #FF3333;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #D0D5DD;
+    padding: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #98A2B3;
+    margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #E4E7EC;
+}
+
+.divider span {
+    padding: 0 1rem;
+    font-size: 0.875rem;
+}
+
+.back-link {
+    color: #344054;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #98A2B3;
+    cursor: pointer;
+}
+
+small.text-muted {
+    font-size: 0.75rem;
+    color: #98A2B3;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        position: static;
+        margin-bottom: 2rem;
+    }
+    
+    body {
+        padding: 1rem;
+    }
+}
