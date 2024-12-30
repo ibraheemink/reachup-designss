@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.reachup-logo {
+    height: 30px;
+}
+
+.invitation-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.invitation-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.inviter-name {
+    font-weight: 600;
+}
+
+.team-name {
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.accept-button {
+    background-color: #ff4742;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.accept-button:hover {
+    background-color: #e63e3a;
+}
+
+@media (max-width: 768px) {
+    .invitation-text {
+        font-size: 20px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+    
+    .accept-button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
