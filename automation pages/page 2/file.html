@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Flow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="brand-section">
+            <div class="d-flex align-items-center mb-3">
+                <span class="brand-letter">D</span>
+                <div class="brand-text">
+                    <span>DELIGHT</span>
+                    <small class="text-muted d-block">Magic W/Delight</small>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-sm w-100 mb-3">Premium Account</button>
+        </div>
+
+        <div class="dashboard-link mb-4">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+        </div>
+
+        <div class="nav-section">
+            <h6 class="nav-header">ENGAGE</h6>
+            <div class="nav-item">
+                <i class="bi bi-chat-square"></i>
+                <span>Campaigning</span>
+            </div>
+            <div class="nav-item active">
+                <i class="bi bi-graph-up"></i>
+                <span>Automation</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <h6 class="nav-header">CONVERSE</h6>
+            <div class="nav-item">
+                <i class="bi bi-inbox"></i>
+                <span>Inbox</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <h6 class="nav-header">GROW</h6>
+            <div class="nav-item">
+                <i class="bi bi-coin"></i>
+                <span>Earn</span>
+            </div>
+            <div class="nav-item">
+                <i class="bi bi-people"></i>
+                <span>Audience</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="d-flex align-items-center">
+            <button class="btn btn-link text-dark close-btn">Close</button>
+            <h6 class="mb-0 ms-4 header-title">New Discount</h6>
+            <span class="badge bg-light text-dark ms-2">Draft</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <button class="btn btn-light me-2">
+                <i class="bi bi-play-fill"></i>
+                Test Automation
+            </button>
+            <button class="btn btn-danger">Activate</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Flow Content -->
+        <div class="flow-content">
+            <!-- Trigger Card -->
+            <div class="flow-card trigger-card">
+                <div class="card-icon">
+                    <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h6>Set up trigger</h6>
+                <button class="btn btn-light btn-sm">
+                    <i class="bi bi-plus"></i> Add trigger
+                </button>
+            </div>
+
+            <!-- Connector Line -->
+            <div class="connector-line"></div>
+
+            <!-- Template Card -->
+            <div class="flow-card template-card">
+                <div class="card-icon template-icon">
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <h6>Send template</h6>
+            </div>
+        </div>
+
+        <!-- Right Setup Panel -->
+        <div class="setup-panel">
+            <div class="setup-header">
+                <div class="d-flex align-items-center">
+                    <div class="setup-icon">
+                        <i class="bi bi-lightning-fill"></i>
+                    </div>
+                    <h6 class="mb-0">Set up trigger</h6>
+                    <button class="btn-close ms-auto"></button>
+                </div>
+            </div>
+
+            <div class="setup-body">
+                <div class="setup-section">
+                    <div class="setup-item">
+                        <div class="d-flex align-items-center">
+                            <div class="setup-icon small">
+                                <i class="bi bi-lightning-fill"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="setup-label">Trigger</div>
+                                <div class="setup-value">Contact enters flow</div>
+                            </div>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="setup-item">
+                        <div class="d-flex align-items-center">
+                            <div class="setup-icon small light">
+                                <i class="bi bi-funnel"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="setup-label">Trigger filters</div>
+                                <div class="setup-sublabel">Limit triggers to certain conditions</div>
+                            </div>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="setup-item">
+                        <div class="d-flex align-items-center">
+                            <div class="setup-icon small light">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="setup-label">Cancellation filters</div>
+                                <div class="setup-sublabel">Contact leaves flow</div>
+                            </div>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-secondary w-100 mt-4">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
